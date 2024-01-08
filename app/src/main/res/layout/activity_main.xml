@@ -55,24 +55,22 @@
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:fontFamily="@font/akaya_telivigala"
-            android:text="0"
+            android:text="Player-1 Score"
             android:textAlignment="center"
             android:textColor="@color/black"
             android:textSize="26dp"
-            android:textStyle="bold"
-            android:layout_below="@id/text_player1"/>
+            android:textStyle="bold"/>
 
         <TextView
             android:id="@+id/score_player2"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:fontFamily="@font/akaya_telivigala"
-            android:text="0"
+            android:text="Player-2 Score"
             android:textAlignment="center"
             android:textColor="@color/black"
             android:textSize="26dp"
             android:textStyle="bold"
-            android:layout_below="@id/text_player2"
             android:layout_toRightOf="@id/score_player1"/>
 
     </RelativeLayout>
@@ -82,13 +80,40 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_centerHorizontal="true">
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/relative_layout">
 
         <LinearLayout
-            android:id="@+id/"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn1"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:textSize="26dp"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginBottom="1.25dp">
+
+            <Button
+                android:id="@+id/btn2"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:textSize="26dp"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginBottom="1.25dp"/>
+
+                <Button
+                    android:id="@+id/btn3"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:textSize="26dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginBottom="1.25dp"/>
+
+            </Button>
+        </LinearLayout>
     </LinearLayout>
 
     </RelativeLayout>
