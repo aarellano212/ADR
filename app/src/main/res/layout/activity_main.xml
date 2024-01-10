@@ -9,7 +9,7 @@
     android:layout_margin="10dp">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/texttitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Tic Tac Toe"
@@ -21,10 +21,12 @@
         />
 
     <RelativeLayout
-        android:id="@+id/layout" android:layout_width="wrap_content"
+        android:id="@+id/relative_layout"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_below="@id/textView"
+        android:layout_below="@id/texttitle"
+        android:layout_marginTop="20dp"
         android:layout_marginBottom="20dp">
 
         <TextView
@@ -55,22 +57,24 @@
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:fontFamily="@font/akaya_telivigala"
-            android:text="Player-1 Score"
+            android:text="0"
             android:textAlignment="center"
             android:textColor="@color/black"
             android:textSize="26dp"
-            android:textStyle="bold"/>
+            android:textStyle="bold"
+            android:layout_below="@id/text_player1"/>
 
         <TextView
             android:id="@+id/score_player2"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:fontFamily="@font/akaya_telivigala"
-            android:text="Player-2 Score"
+            android:text="0"
             android:textAlignment="center"
             android:textColor="@color/black"
             android:textSize="26dp"
             android:textStyle="bold"
+            android:layout_below="@id/text_player2"
             android:layout_toRightOf="@id/score_player1"/>
 
     </RelativeLayout>
@@ -94,7 +98,7 @@
                 android:layout_height="75dp"
                 android:textSize="26dp"
                 android:layout_marginHorizontal="5dp"
-                android:layout_marginBottom="1.25dp">
+                android:layout_marginBottom="1.25dp"/>
 
             <Button
                 android:id="@+id/btn2"
@@ -113,7 +117,6 @@
                     android:layout_marginBottom="1.25dp"/>
 
             </Button>
-        </LinearLayout>
     </LinearLayout>
 
     </RelativeLayout>
