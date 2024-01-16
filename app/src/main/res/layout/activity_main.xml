@@ -26,7 +26,6 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_below="@id/texttitle"
-        android:layout_marginTop="20dp"
         android:layout_marginBottom="20dp">
 
         <TextView
@@ -117,14 +116,6 @@
                 android:layout_marginBottom="1.25dp"/>
     </LinearLayout>
 
-        <LinearLayout
-            android:id="@+id/layout_linear"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_centerHorizontal="true"
-            android:layout_below="@+id/relative_layout">
-
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -154,14 +145,6 @@
                     android:layout_marginHorizontal="5dp"
                     android:layout_marginBottom="1.25dp"/>
             </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/layout_linear"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_centerHorizontal="true"
-                android:layout_below="@+id/relative_layout">
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -193,9 +176,43 @@
                         android:layout_marginBottom="1.25dp"/>
                 </LinearLayout>
 
+                <TextView
+                    android:id="@+id/textStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/layout_linear"
+                    android:layout_marginTop="20dp"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="26dp"
+                    android:fontFamily="@font/akaya_telivigala"
+                    android:text="Status"
+                    android:textColor="@color/black"/>
+
+                <Button
+                    android:id="@+id/btn_play_again"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textStatus"
+                    android:layout_centerHorizontal="true"
+                    android:text="Play Again"
+                    android:textSize="26dp"
+                    android:fontFamily="@font/akaya_telivigala"
+                    android:backgroundTint="#ffbb00"/>
+
+                <Button
+                    android:id="@+id/btn_reset"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/btn_play_again"
+                    android:layout_centerHorizontal="true"
+                    android:text="Reset"
+                    android:textSize="26dp"
+                    android:fontFamily="@font/akaya_telivigala"
+                    android:backgroundTint="#cc1234"/>
+
+
 
     </Button>
-    </LinearLayout>
     </RelativeLayout>
 
     l
