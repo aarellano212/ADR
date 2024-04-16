@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    tools:context=".TicTacToe"
     android:layout_margin="10dp">
 
     <TextView
@@ -215,4 +215,3 @@
         android:fontFamily="@font/akaya_telivigala"
         android:backgroundTint="#cc1234"/>
 </RelativeLayout>
-
